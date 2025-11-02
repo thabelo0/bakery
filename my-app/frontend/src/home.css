@@ -1,0 +1,78 @@
+.home-container {
+  background: linear-gradient(to bottom right, #e7f0ff, #ffffff);
+  min-height: 100vh;
+  padding: 3rem 2rem;
+  text-align: center;
+  color: #1a2b4c;
+  font-family: "Poppins", sans-serif;
+}
+
+.home-hero h1 {
+  font-size: 3rem;
+  color: #0d47a1;
+  margin-bottom: 0.5rem;
+}
+
+.home-hero h3 {
+  font-weight: 400;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.home-tagline {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  font-size: 1.1rem;
+  color: #4a4a4a;
+}
+
+.home-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.home-btn {
+  text-decoration: none;
+  background-color: #0d6efd;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.home-btn:hover {
+  background-color: #0044cc;
+}
+
+.home-btn.secondary {
+  background-color: #e3f2fd;
+  color: #0d47a1;
+}
+
+.home-btn.secondary:hover {
+  background-color: #bbdefb;
+}
+
+.home-info {
+  background-color: white;
+  border-radius: 15px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+
+.home-info h2 {
+  text-align: center;
+  color: #0d47a1;
+  margin-bottom: 1rem;
+}
+
+.home-info ul {
+  list-style: none;
+  padding-left: 0;
+}
