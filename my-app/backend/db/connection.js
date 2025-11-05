@@ -1,15 +1,19 @@
 import mysql from 'mysql2';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const db = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: '', 
-  database: 'bakery'
+  host: process.env.DB_HOST || process.env.MYSQLHOST,
+  user: process.env.DB_USER || process.env.MYSQLUSER,
+  password: process.env.DB_PASS || process.env.MYSQLPASSWORD,
+  database: process.env.DB_NAME || process.env.MYSQLDATABASE,
+  port: process.env.DB_PORT || process.env.MYSQLPORT
 });
 
 db.connect(err => {
-  if (err) console.error('DB connection error:', err);
-  else console.log('Connected to MySQL');
+  if (err) console.error('❌ DB connection error:', err);
+  else console.log('✅ Connected to MySQL');
 });
 
 export default db;
